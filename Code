@@ -1,0 +1,57 @@
+#ask what problem she wants to address
+#give 3 options
+
+problem = input("Please select what problem you'd like a mad lib for \n1) Problem with Progress Checks\n2) Qualtiy Issue\n3) Behavior Issue\n").lower()
+
+#Problem 1
+if problem == "1" or problem == "problem with progress checks" or problem == "1) problem with progress checks":
+  #taking in blanks
+  project_or_role = input("Insert what project or role they are interested in: ")
+  constraints = input("Insert what constraint there is: ")
+  person = input("Insert who the have to report to: ")
+  consequence = input("Insert consequence: ")
+  com_method = input("Insert communication method: ")
+  time_period = input("Insert time they need to communicate by: ")
+  #output of finished mad lib
+  print("Care: I know that you are invested in " + project_or_role)
+  print("Situation: We have " + constraints)
+  print("Behavior: and when " + person + " doesn't hear from you about your progress,")
+  print("Result: we risk " + consequence + ".")
+  print("Request: Can you commit to checking in with " + person + " via " + com_method + " every " + time_period + ".")
+
+#Problem 2
+elif problem == "2" or problem == "qualtiy issue" or problem == "2) qualtiy issue":
+  #taking in blanks
+  skill = input("Insert skill: ")
+  quality_issue = input("Insert quality issue: ")
+  task = input("Insert task or responsibility: ")
+  consequence = input("Insert consequence: ")
+  action = input("Insert action: ")
+  person = input("Insert who the have to report to: ")
+  date = input("Insert date ")
+  #output of finished mad lib
+  print("Care: I know how hard you've been working to develop " + skill + ".")
+  print("Situation: I've noticed some " + quality_issue)
+  print("Behavior: when you perform " + task + ",")
+  print("Result: which has caused us " + consequence)
+  print("Request: Next time, I'd like you to " + action + " with " + person + " before " + date + " to catch any " + quality_issue + " in advance.")
+
+#Problem 3
+elif problem == "3" or problem == "behavior issue" or problem == "3) behavior issue":
+  intent = input("Insert a positive intent: ")
+  setting = input("Insert setting where negative behavior is happening: ")
+  behavior = input("Insert problematic behavior: ")
+  emotions = input("Insert the emotions this behvior makes you feel: ")
+  new_behavior = input("Insert how you'd like to feel: ")
+  need = input("State what need they need to meet: ")
+  verb = input("Insert what they need to do to meet that need in one verb: ")
+  response = input("Insert response to need: ")
+  print("Care: I know you " + intent + ",")
+  print("Situation: but when we're " + setting)
+  print("Behavior: and you " + behavior)
+  print("Result: I feel " + emotions + "and can't " + new_behavior + ".")
+  print("Request: Going forward, could you " + need + " by " + verb + "ing? This will help me " + response + " while also feeling respected/cared for/etc.")
+
+#default
+else:
+  print("It seems your input did not match the selections. Please try again.")

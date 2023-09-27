@@ -8,7 +8,7 @@ if problem == "1" or problem == "problem with progress checks" or problem == "1)
   #taking in blanks
   project_or_role = input("Insert what project or role they are interested in: ")
   constraints = input("Insert what constraint there is: ")
-  person = input("Insert who the have to report to: ")
+  person = input("Insert who they have to report to: ")
   consequence = input("Insert consequence: ")
   com_method = input("Insert communication method: ")
   time_period = input("Insert time they need to communicate by: ")
@@ -27,7 +27,7 @@ elif problem == "2" or problem == "qualtiy issue" or problem == "2) qualtiy issu
   task = input("Insert task or responsibility: ")
   consequence = input("Insert consequence: ")
   action = input("Insert action: ")
-  person = input("Insert who the have to report to: ")
+  person = input("Insert who they have to report to: ")
   date = input("Insert date ")
   #output of finished mad lib
   print("Care: I know how hard you've been working to develop " + skill + ".")
